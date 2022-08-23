@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  overflow: hidden;
+  transition: width 500ms linear;
+}
+
+.menu:hover {
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: orange;
+}
+
+.menu li {
+  list-style-type: square;
+  margin-left: 10px;
+}
+
+.menu-link {
+  position: relative;
+  display: table-cell;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: white;
+  rotate: 90deg;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45%;
+  left: -35px;
+  width: 100px;
+}
+
+.menu:hover p {
+  opacity: 0.5;
+  transition: 1200ms;
+  position: absolute;
+  left: 260px;
+}
